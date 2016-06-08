@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    tools:context="in.rohit.DocAppoint.DentistActivity"
+    >
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Dietition"
+            android:textColor="#ffffff"
+            android:background="#1565C0"
+            android:id="@+id/mechanic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ListView
+            android:id="@+id/DietitionList"
+            android:layout_below="@+id/mechanic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</LinearLayout>

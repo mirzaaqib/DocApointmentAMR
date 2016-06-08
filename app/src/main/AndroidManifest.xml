@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rohit.DocAppoint" >
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ll"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCk8yQ4D-8NQbufiSLXJ-We7XfJCPsfNkY" />
+
+        <activity android:name="in.rohit.DocAppoint.HomeActivity1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="in.rohit.DocAppoint.MainActivity"/>
+        <activity android:name="in.rohit.DocAppoint.SignUPActivity"/>
+        <activity android:name="in.rohit.DocAppoint.HomeActivity" />
+        <activity android:name="in.rohit.DocAppoint.DentistActivity" />
+        <activity android:name="in.rohit.DocAppoint.DentistDetailActivity" />
+        <activity android:name="in.rohit.DocAppoint.Homeopath" />
+        <activity android:name="in.rohit.DocAppoint.Gynecologist" />
+        <activity android:name="in.rohit.DocAppoint.RegisterActivity"/>
+        <activity android:name="in.rohit.DocAppoint.Data.Dietition"/>
+        <activity android:name="in.rohit.DocAppoint.Ent"/>
+       <activity android:name="in.rohit.DocAppoint.Physician"/>
+        <activity android:name="in.rohit.DocAppoint.Appointment"></activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

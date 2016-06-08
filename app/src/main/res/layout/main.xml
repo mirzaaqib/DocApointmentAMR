@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aimages"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:weightSum="1">
+
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/ll"
+        android:id="@+id/imageButton3"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Your Doctor Here !!"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="-140dp"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.29" />
+
+    <Button
+        android:id="@+id/buttonSignIN"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:background="#ffffff"
+        android:layout_marginTop="120dp"
+         android:text="Sign In" 
+         android:onClick="signIn"/>
+
+    <Button
+        android:id="@+id/buttonSignUP"
+        android:layout_width="310dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"
+        android:text="Sign Up" />
+
+</LinearLayout>

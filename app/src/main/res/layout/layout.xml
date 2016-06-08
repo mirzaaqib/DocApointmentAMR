@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <ScrollView
+        android:padding="8dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:showIn="@layout/activity_main"
+            android:background="@drawable/aimages"
+            >
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action Bar:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF" />
+
+            <AutoCompleteTextView
+                android:id="@+id/editText1"
+                android:layout_width="400dp"
+                android:background="#bbbcb7"
+                android:layout_height="50dp"
+
+                android:ems="10"
+                android:imeOptions="actionSearch"
+                android:inputType="textAutoComplete|textAutoCorrect"
+                android:textColor="#000000" >
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            `<LinearLayout
+                android:id="@+id/linearGrid"
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    >
+
+
+
+                    <RelativeLayout
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:onClick="openDentistActivity"
+                            android:layout_width="125dp"
+                            android:layout_height="115dp"
+                            android:layout_marginTop="70dp"
+                            android:layout_marginLeft="26dp"
+                            android:id="@+id/Buttonmechanic"
+                            android:background="@drawable/den"
+                            />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageButton
+                            android:onClick="openDietition"
+                            android:layout_width="148dp"
+                            android:layout_height="147dp"
+                            android:layout_marginBottom="-17dp"
+                            android:id="@+id/Buttonmedcare"
+                            android:background="@drawable/dietitian"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" /><![CDATA[
+                        />
+
+                    ]]>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <RelativeLayout
+                        android:onClick="openRestaurantBAr"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageButton
+                            android:onClick="openHomeopath"
+                            android:layout_marginTop="50dp"
+                            android:layout_width="124dp"
+                            android:layout_height="115dp"
+                            android:layout_marginLeft="48dp"
+                            android:id="@+id/Buttonchill"
+                            android:background="@drawable/nhomo"
+                            android:layout_centerHorizontal="true" />
+                        <ImageView
+                            android:onClick="openEnt"
+                            android:layout_width="131dp"
+                            android:layout_height="115dp"
+                            android:layout_marginTop="206dp"
+                            android:layout_marginLeft="26dp"
+                            android:id="@+id/Buttonsurgery"
+                            android:background="@drawable/surgery"
+                            />
+                        <TextView
+                            android:onClick="openEnt"
+                            android:gravity="center"
+                            android:text="Homeopath"
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="-31dp"
+                            android:paddingBottom="10dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:layout_alignBottom="@+id/Buttonchill"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            />
+                        <TextView
+                        android:onClick="openRestaurantBAr"
+                        android:gravity="center"
+                        android:text="Ent"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="-182dp"
+                        android:paddingBottom="7dp"
+                        android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:layout_alignBottom="@+id/Buttonchill"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        />
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="Dentist"
+                            android:layout_width="match_parent"
+                            android:padding="1dp"
+                            android:layout_marginTop="-7dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true" />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_marginTop="-10dp"
+                        android:layout_width="0dp"
+                        android:layout_marginRight="-14dp"
+                        android:layout_height="match_parent">
+                        <ImageButton
+                            android:onClick="openGynecologist"
+                            android:layout_marginTop="46dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="249dp"
+                            android:layout_marginRight="-10dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_height="136dp"
+                            android:id="@+id/Buttonservice"
+                            android:background="@drawable/hh"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:paddingTop="180dp"
+                            android:text="Gynecologist"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="-14dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="9dp"
+                            android:textColor="#000000"
+                            android:id="@+id/textView4"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="Dietition"
+                            android:layout_width="match_parent"
+                            android:paddingTop="9dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="-7dp"
+                            android:textColor="#000000"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignStart="@+id/textView4" />
+                        <ImageView
+                            android:onClick="openPhysician"
+                            android:layout_width="176dp"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="190dp"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/Buttonsnewr"
+                            android:background="@drawable/snewr"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:text="physician"
+                            android:layout_width="match_parent"
+                            android:paddingTop="320dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="-14dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true" />
+
+                        <!--<ImageButton-->
+                            <!--android:layout_width="200dp"-->
+                            <!--android:layout_marginTop="75dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/imageButton4"-->
+                            <!--android:background="@drawable/bbnr"-->
+                            <!--android:layout_below="@+id/Buttonsnewr"-->
+                            <!--android:layout_alignEnd="@+id/Buttonsnewr"-->
+                            <!--android:layout_marginEnd="62dp" />-->
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
